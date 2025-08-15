@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Tracker</title>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Opcionalno: Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">📚 My Book Tracker</h1>
+      <a href="/new" class="btn btn-success mb-3">Dodaj novu knjigu</a>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Naslov</th>
+            <th>Autor</th>
+            <th>Status</th>
+            <th>Opis</th>
+            <th>Akcije</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (books.length === 0) { %>
+          <tr>
+            <td colspan="5" class="text-center">Nema knjiga u trackeru</td>
+          </tr>
+          <% } else { %> <% books.forEach(book => { %>
+          <tr>
+            <td><%= book.title %></td>
+            <td><%= book.author %></td>
+            <td><%= book.status %></td>
+            <td><%= book.description %></td>
+            <td>
+              <a href="/edit/<%= book._id %>" class="btn btn-primary btn-sm"
+                >Uredi</a
+              >
+              <form
+                action="/delete/<%= book._id %>"
+                method="POST"
+                style="display: inline"
+              >
+                <button type="submit" class="btn btn-danger btn-sm">
+                  Obriši
+                </button>
+              </form>
+            </td>
+          </tr>
+          <% }) %> <% } %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
