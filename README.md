@@ -1,23 +1,28 @@
-<b>LIVE LINK:</b> https://book-tracker-uise.onrender.com
+# 📚 Book Tracker  
 
-<b>Description:</b>
+🔗 **Live Link:** [book-tracker-uise.onrender.com](https://book-tracker-uise.onrender.com)  
 
-A full-stack web application for tracking books that have been read, are currently being read, or are yet to be read. Allows users to add new books, update existing entries, delete books, and view details.
+---
 
+## 📖 Description  
+A full-stack web application for tracking books that have been read, are currently being read, or are yet to be read.  
+Users can **add new books, update existing entries, delete books, and view details.**
 
-<b>Technologies:</b>
+---
 
-<li>Node.js & Express.js (backend)</li>
-<li>MongoDB (database)</li>
-<li>EJS (templating)</li>
-<li>Bootstrap (styling)</li>
-<li>Render (backend hosting)</li>
+## 🛠️ Technologies  
+- **Node.js & Express.js** (backend)  
+- **MongoDB** (database)  
+- **EJS** (templating)  
+- **Bootstrap** (styling)  
+- **Render** (backend hosting)  
 
+---
 
+## ✨ Features  
+- 🔄 **CRUD functionality** (Create, Read, Update, Delete)  
+- 📖 **Book status selection** (Not Read, Reading, Read)  
+- 📱 **Responsive and user-friendly design**  
+- ☁️ **Deployed backend and frontend**  
 
-<b>Features:</b>
-
-Create, Read, Update, Delete (CRUD) functionality
-Book status selection (Not Read, Reading, Read)
-Responsive and user-friendly design
-Deployed backend and frontend
+---
